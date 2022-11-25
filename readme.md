@@ -1,5 +1,9 @@
 Odin Recipes
 ---
 
-### Introduction
-This is a TOP (The Odin Project) assignment intended to demonstrate competence with HTML and CSS.
+#### Introduction
+This is a TOP (The Odin Project) assignment intended to demonstrate skill with HTML and CSS.
+
+
+[Odin Recipes by a-marquez](https://a-marquez/github.com/odin-recipes)
+
