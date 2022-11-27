@@ -5,52 +5,117 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spaghetti Bolognese</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <h1>Spaghetti Bolognese</h1>
-  <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/easy_spaghetti_bolognese_93639_16x9.jpg" alt="A plate of spaghetti bolognese.">
+<body class="bg-slate-50">
+  <header
+    class="w-full flex flex-col justify-end"
+    style="background-image: url('https://moderncrumb.com/wp-content/uploads/2020/11/spaghetti-bolognese-meat-sauce.jpg')"
+  >
+    <div>
+      <section>
+        <h1 class="font-bold text-white text-4xl md:text-6xl">Spaghetti Bolognese</h1>
+      </section>
+    </div>
+  </header>
 
-  <h3>Description</h3>
-  <p>A weeknight Spaghetti Bolognese recipe that is rich, filling, and hearty.
-    Ready in about 45 minutes, this simplified Italian pasta dish delivers big flavors in little time.
-  </p>
+  <nav class="sticky top-0 bg-blue-100 py-3 border-b-4 border-b-sky-200 shadow-md">
+    <section class="flex flex-col md:flex-row justify-between text-sm md:text-base">
+      <div class="flex justify-between">
+        <span class="md:mr-4 hover:underline">
+          <a href="../index.html">Odin Recipes</a>
+        </span>
+        <span class="hover:underline">
+          <a href="https://github.com/a-marquez/odin-recipes" target="_blank">@a-marquez</a>
+        </span>
+      </div>
+      <div>
+        <ul class="flex flex-col md:flex-row list-none">
+          <li class="md:mx-2 hover:underline"><a href="./pad-thai.html">Pad Thai</a></li>
+          <li class="md:mx-2 hover:underline"><a href="./deviled-eggs.html">Deviled Eggs</a></li>
+          <li class="md:mx-2 hover:underline font-bold"><a href="./spaghetti-bolognese.html">Spaghetti Bolognese</a></li>
+        </ul>
+      </div>
+    </section>
+  </nav>
 
-  <h3>Ingredients</h3>
-  <ul>
-    <li>2 tablespoons vegetable oil</li>
-    <li>1 large or 2 small onion, chopped</li>
-    <li>1- pound ground beef 85% 15%</li>
-    <li>1 28 ounces can of diced tomatoes</li>
-    <li>2 tablespoons tomato paste</li>
-    <li>3 cloves of garlic minced</li>
-    <li>1 teaspoon dried oregano</li>
-    <li>1 sprig of thyme tied in a bundle</li>
-    <li>1 bay leaf</li>
-    <li>1 teaspoon Kosher salt</li>
-    <li>1/2 teaspoon black pepper</li>
-    <li>1/2 cup red wine</li>
-    <li>1 cup chicken stock</li>
-    <li>1/2 cup fresh basil roughly chopped</li>
-    <li>1 cup Parmesan cheese shredded</li>
-    <li>1 pound (16 oz.) dried spaghetti or linguini</li>
-  </ul>
+  <main class="">
+    <section class="my-6 bg-white overflow-hidden shadow-md border-slate-200 border-4 rounded-tr-2xl rounded-bl-2xl">
+      <h3 class="bg-slate-100 p-4 font-bold text-slate-600 flex justify-between">
+        About the dish
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625z" />
+          <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+        </svg>
+      </h3>
+      <p class="m-4">A weeknight Spaghetti Bolognese recipe that is rich, filling, and hearty.
+        Ready in about 45 minutes, this simplified Italian pasta dish delivers big flavors in little time.
+      </p>
+    </section>
 
-  <h3>Steps</h3>
-  <ol>
-    <li>Heat olive oil in a Dutch oven (or any other heavy bottom pot) in medium heat. Add onion. Cook until wilted, 7-9 minutes.</li>
-    <li>Stir in the tomatoes and tomato paste. Cook, stirring frequently for 5 minutes.</li>
-    <li>Add in the ground beef. Using a wooden spoon break it into smaller chunks. Cook, stirring frequently, until it is browned, 7-8 minutes.</li>
-    <li>Add the garlic, dried oregano, bundle thyme, salt, pepper, bay leaf, red wine, and chicken stock. Give everything a stir. Bring it to a simmer.</li>
-    <li>Reduce the heat to medium-low, put the lid on, and let it to cook for 20-25 minutes, making sure to stir occasionally.</li>
-    <li>Meanwhile, bring a large pot of salted water to boil and cook the spaghetti according to the instructions on its package. *Please read the Pro Tip below*</li>
-    <li>Once the spaghetti is ready, drain it in a colander.</li>
-    <li>Discard the thyme bundle and the bay leaf from the Bolognese sauce.</li>
-    <li>Add drained pasta into the sauce. Stir it all together making sure that the pasta is generously coated with the sauce.</li>
-    <li>Stir in the fresh basil and top it off with grated Parmesan cheese.</li>
-    <li>Serve.</li>
-  </ol>
+    <section class="my-6 bg-white overflow-hidden shadow-md border-orange-300 border-4 rounded-tr-3xl rounded-bl-3xl">
+      <h3 class="bg-orange-100 p-4 font-bold border-b-4 border-orange-300 text-orange-800 flex justify-between">
+        Ingredients
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M2.625 6.75a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875 0A.75.75 0 018.25 6h12a.75.75 0 010 1.5h-12a.75.75 0 01-.75-.75zM2.625 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zM7.5 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5h-12A.75.75 0 017.5 12zm-4.875 5.25a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875 0a.75.75 0 01.75-.75h12a.75.75 0 010 1.5h-12a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+        </svg>
+      </h3>
+      <ul class="list-disc mx-8 my-4">
+        <li>2 tablespoons vegetable oil</li>
+        <li>1 large or 2 small onion, chopped</li>
+        <li>1- pound ground beef 85% 15%</li>
+        <li>1 28 ounces can of diced tomatoes</li>
+        <li>2 tablespoons tomato paste</li>
+        <li>3 cloves of garlic minced</li>
+        <li>1 teaspoon dried oregano</li>
+        <li>1 sprig of thyme tied in a bundle</li>
+        <li>1 bay leaf</li>
+        <li>1 teaspoon Kosher salt</li>
+        <li>1/2 teaspoon black pepper</li>
+        <li>1/2 cup red wine</li>
+        <li>1 cup chicken stock</li>
+        <li>1/2 cup fresh basil roughly chopped</li>
+        <li>1 cup Parmesan cheese shredded</li>
+        <li>1 pound (16 oz.) dried spaghetti or linguini</li>
+      </ul>
 
-  <p>Recipe Credit: https://foolproofliving.com/spaghetti-bolognese/</p>
+    </section>
+
+    <section class="my-6 bg-white overflow-hidden shadow-md border-red-300 border-4 rounded-tr-3xl rounded-bl-3xl">
+      <h3 class="bg-red-100 p-4 font-bold text-red-800 flex justify-between">
+        Steps
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+        </svg>
+      </h3>
+      <ol class="list-decimal mr-4 ml-8 my-4">
+        <li class="my-4">Heat olive oil in a Dutch oven (or any other heavy bottom pot) in medium heat. Add onion. Cook until wilted, 7-9 minutes.</li>
+        <li class="my-4">Stir in the tomatoes and tomato paste. Cook, stirring frequently for 5 minutes.</li>
+        <li class="my-4">Add in the ground beef. Using a wooden spoon break it into smaller chunks. Cook, stirring frequently, until it is browned, 7-8 minutes.</li>
+        <li class="my-4">Add the garlic, dried oregano, bundle thyme, salt, pepper, bay leaf, red wine, and chicken stock. Give everything a stir. Bring it to a simmer.</li>
+        <li class="my-4">Reduce the heat to medium-low, put the lid on, and let it to cook for 20-25 minutes, making sure to stir occasionally.</li>
+        <li class="my-4">Meanwhile, bring a large pot of salted water to boil and cook the spaghetti according to the instructions on its package. *Please read the Pro Tip below*</li>
+        <li class="my-4">Once the spaghetti is ready, drain it in a colander.</li>
+        <li class="my-4">Discard the thyme bundle and the bay leaf from the Bolognese sauce.</li>
+        <li class="my-4">Add drained pasta into the sauce. Stir it all together making sure that the pasta is generously coated with the sauce.</li>
+        <li class="my-4">Stir in the fresh basil and top it off with grated Parmesan cheese.</li>
+        <li class="my-4">Serve.</li>
+      </ol>
+    </section>
+
+    <div class="text-xs mx-8 text-slate-500 pb-10">
+      <h5 class="font-bold">Credits</h5>
+      <a class="break-words hover:underline inline-block my-2 w-full" target="_blank" href="https://foolproofliving.com/spaghetti-bolognese">
+        Recipe: https://foolproofliving.com/spaghetti-bolognese/
+      </a>
+      </br>
+      <a class="break-words hover:underline inline-block my-2 w-full" target="_blank" href="https://moderncrumb.com/wp-content/uploads/2020/11/spaghetti-bolognese-meat-sauce.jp">
+        Image: https://moderncrumb.com/wp-content/uploads/2020/11/spaghetti-bolognese-meat-sauce.jpg
+      </a>
+    </div>
+
+  </main>
 
 </body>
 </html>
