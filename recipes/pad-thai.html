@@ -8,9 +8,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body class="bg-sky-50">
+<body class="bg-slate-50">
   <header
-    class="w-full flex flex-col justify-end border-b-4 border-b-indigo-500"
+    class="w-full flex flex-col justify-end"
     style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/1200px-Phat_Thai_kung_Chang_Khien_street_stall.jpg')"
   >
     <div>
@@ -21,35 +21,46 @@
   </header>
 
   <nav class="sticky top-0 bg-blue-100 py-3 border-b-4 border-b-sky-200 shadow-md">
-    <section class="flex flex-col md:flex-row justify-between text-sm">
+    <section class="flex flex-col md:flex-row justify-between text-sm md:text-base">
       <div class="flex justify-between">
-        <span class="font-bold md:mr-4">
+        <span class="md:mr-4 hover:underline">
           <a href="../index.html">Odin Recipes</a>
         </span>
-        <span>
-          <a href="https://github.com/a-marquez" target="_blank">@a-marquez</a>
+        <span class="hover:underline">
+          <a href="https://github.com/a-marquez/odin-recipes" target="_blank">@a-marquez</a>
         </span>
       </div>
       <div>
         <ul class="flex flex-col md:flex-row list-none">
-          <li class="md:mx-2"><a href="./pad-thai.html">Pad Thai</a></li>
-          <li class="md:mx-2"><a href="./deviled-eggs.html">Deviled Eggs</a></li>
-          <li class="md:mx-2"><a href="./spaghetti-bolognese.html">Spaghetti Bolognese</a></li>
+          <li class="md:mx-2 hover:underline font-bold"><a href="./pad-thai.html">Pad Thai</a></li>
+          <li class="md:mx-2 hover:underline"><a href="./deviled-eggs.html">Deviled Eggs</a></li>
+          <li class="md:mx-2 hover:underline"><a href="./spaghetti-bolognese.html">Spaghetti Bolognese</a></li>
         </ul>
       </div>
     </section>
   </nav>
 
   <main class="">
-    <section class="my-6 p-3 bg-white shadow-md border-slate-300 border-4 rounded-tr-3xl rounded-bl-3xl">
-      <h3>Description</h3>
-      <p>A wildly popular stir-fry dish hailing from Thailand. While there are many possible variations to the dish's sauce,
+    <section class="my-6 bg-white overflow-hidden shadow-md border-slate-200 border-4 rounded-tr-2xl rounded-bl-2xl">
+      <h3 class="bg-slate-100 p-4 font-bold text-slate-600 flex justify-between">
+        About the dish
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625z" />
+          <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+        </svg>
+      </h3>
+      <p class="m-4">Pad Thai is a wildly popular stir-fry dish hailing from Thailand. While there are many possible variations to the dish's sauce,
       the mainstays are rice noodles, protein/tofu, and scrambled egg. The recipe below is a simplified and quick take.</p>
     </section>
 
-    <section class="my-6 p-3 bg-white shadow-md border-orange-300 border-4 rounded-tr-3xl rounded-bl-3xl">
-      <h3>Ingredients</h3>
-      <ul>
+    <section class="my-6 bg-white overflow-hidden shadow-md border-orange-300 border-4 rounded-tr-3xl rounded-bl-3xl">
+      <h3 class="bg-orange-100 p-4 font-bold border-b-4 border-orange-300 text-orange-800 flex justify-between">
+        Ingredients
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M2.625 6.75a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875 0A.75.75 0 018.25 6h12a.75.75 0 010 1.5h-12a.75.75 0 01-.75-.75zM2.625 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zM7.5 12a.75.75 0 01.75-.75h12a.75.75 0 010 1.5h-12A.75.75 0 017.5 12zm-4.875 5.25a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875 0a.75.75 0 01.75-.75h12a.75.75 0 010 1.5h-12a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+        </svg>
+      </h3>
+      <ul class="list-disc mx-8 my-4">
         <li>Kosher salt </li>
         <li>8 oz. wide rice noodles </li>
         <li>2 tbsp. lime juice </li>
@@ -69,28 +80,39 @@
 
     </section>
 
-    <section class="my-6 p-3 bg-white shadow-md border-red-300 border-4 rounded-tr-3xl rounded-bl-3xl">
-      <h3>Steps</h3>
-      <ol>
-        <li>Use a large pot of salted boiling water to cook the noodles. Aim for al dente. Drain the pot.</li>
-        <li>Gather lime juice, fish sauce, soy sauce, cayenne pepper, and brown sugar in a small bowl. Whisk ingredents together </li>
-        <li>Add oil to a large nonstick pan and heat over medium-high heat. Add and cook bell peppers for about 4 minutes.
+    <section class="my-6 bg-white overflow-hidden shadow-md border-red-300 border-4 rounded-tr-3xl rounded-bl-3xl">
+      <h3 class="bg-red-100 p-4 font-bold text-red-800 flex justify-between">
+        Steps
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+        </svg>
+      </h3>
+      <ol class="list-decimal mr-4 ml-8 my-4">
+        <li class="my-4">Use a large pot of salted boiling water to cook the noodles. Aim for al dente. Drain the pot.</li>
+        <li class="my-4">Gather lime juice, fish sauce, soy sauce, cayenne pepper, and brown sugar in a small bowl. Whisk ingredents together </li>
+        <li class="my-4">Add oil to a large nonstick pan and heat over medium-high heat. Add and cook bell peppers for about 4 minutes.
         Add garlic, stir and cook until garlic produces aroma, for about 1 minute. Add the shrimp and cook until pink, this should take
         about 2 minutes each side. Season the shrimp with salt and pepper.
         </li>
-        <li>Push aside the veggies and shrimp to make space for the egg. Pour egg in and scramble until just set, then combine
+        <li class="my-4">Push aside the veggies and shrimp to make space for the egg. Pour egg in and scramble until just set, then combine
         the eggs with the rest of the dish. Add cooked noodles and stir and toss until fully incorporated. Pour in the sauce mixture
         from earlier and toss to coat the noodles.
         </li>
-        <li>Serve and garnish with green onions and roasted peanuts.</li>
+        <li class="my-4">Serve and garnish with green onions and roasted peanuts.</li>
       </ol>
     </section>
 
-    <h5>Credits</h5>
-    <ul>
-      <li class="break-words">Recipe: https://www.delish.com/cooking/recipe-ideas/recipes/a53823/easy-pad-thai-recipe/</li>
-      <li class="break-words">Image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/1200px-Phat_Thai_kung_Chang_Khien_street_stall.jpg</li>
-    </ul>
+    <div class="text-xs mx-8 text-slate-500 pb-10">
+      <h5 class="font-bold">Credits</h5>
+      <a class="break-words hover:underline inline-block my-2" target="_blank" href="https://www.delish.com/cooking/recipe-ideas/recipes/a53823/easy-pad-thai-recipe/">
+        Recipe: https://www.delish.com/cooking/recipe-ideas/recipes/a53823/easy-pad-thai-recipe/
+      </a>
+      </br>
+      <a class="break-words hover:underline inline-block my-2" target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/1200px-Phat_Thai_kung_Chang_Khien_street_stall.jpg">
+        Image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/1200px-Phat_Thai_kung_Chang_Khien_street_stall.jpg
+      </a>
+    </div>
+
   </main>
 
 </body>
